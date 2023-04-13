@@ -1,0 +1,68 @@
+Compiled from "ExtMethod.scala"
+public final class foo.Foo$ implements java.io.Serializable {
+  public static final foo.Foo$ MODULE$;
+
+  private foo.Foo$();
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static {};
+    Code:
+       0: new           #2                  // class foo/Foo$
+       3: dup
+       4: invokespecial #21                 // Method "<init>":()V
+       7: putstatic     #23                 // Field MODULE$:Lfoo/Foo$;
+      10: return
+
+  private java.lang.Object writeReplace();
+    Code:
+       0: new           #27                 // class scala/runtime/ModuleSerializationProxy
+       3: dup
+       4: ldc           #2                  // class foo/Foo$
+       6: invokespecial #30                 // Method scala/runtime/ModuleSerializationProxy."<init>":(Ljava/lang/Class;)V
+       9: areturn
+
+  public final foo.Foo$IntExt IntExt(int);
+    Code:
+       0: new           #9                  // class foo/Foo$IntExt
+       3: dup
+       4: iload_1
+       5: invokespecial #35                 // Method foo/Foo$IntExt."<init>":(I)V
+       8: areturn
+}
+Compiled from "ExtMethod.scala"
+public class foo.Foo$IntExt {
+  private final int i;
+
+  public foo.Foo$IntExt(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #14                 // Field i:I
+       5: aload_0
+       6: invokespecial #17                 // Method java/lang/Object."<init>":()V
+       9: return
+
+  public int i();
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field i:I
+       4: ireturn
+
+  public int someExtensionMethod();
+    Code:
+       0: aload_0
+       1: invokevirtual #23                 // Method i:()I
+       4: ireturn
+}
+Compiled from "ExtMethod.scala"
+public final class foo.Foo {
+  public static foo.Foo$IntExt IntExt(int);
+    Code:
+       0: getstatic     #15                 // Field foo/Foo$.MODULE$:Lfoo/Foo$;
+       3: iload_0
+       4: invokevirtual #17                 // Method foo/Foo$.IntExt:(I)Lfoo/Foo$IntExt;
+       7: areturn
+}

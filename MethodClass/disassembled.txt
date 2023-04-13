@@ -1,0 +1,13 @@
+Compiled from "MethodClass.scala"
+public class foo.Foo {
+  public foo.Foo();
+    Code:
+       0: aload_0
+       1: invokespecial #9                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public int bar();
+    Code:
+       0: bipush        42
+       2: ireturn
+}

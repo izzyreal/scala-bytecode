@@ -1,0 +1,8 @@
+Compiled from "EmptyClass.scala"
+public class foo.Foo {
+  public foo.Foo();
+    Code:
+       0: aload_0
+       1: invokespecial #9                  // Method java/lang/Object."<init>":()V
+       4: return
+}

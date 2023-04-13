@@ -1,0 +1,39 @@
+Compiled from "MethodObject.scala"
+public final class foo.Foo$ implements java.io.Serializable {
+  public static final foo.Foo$ MODULE$;
+
+  private foo.Foo$();
+    Code:
+       0: aload_0
+       1: invokespecial #13                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static {};
+    Code:
+       0: new           #2                  // class foo/Foo$
+       3: dup
+       4: invokespecial #16                 // Method "<init>":()V
+       7: putstatic     #18                 // Field MODULE$:Lfoo/Foo$;
+      10: return
+
+  private java.lang.Object writeReplace();
+    Code:
+       0: new           #22                 // class scala/runtime/ModuleSerializationProxy
+       3: dup
+       4: ldc           #2                  // class foo/Foo$
+       6: invokespecial #25                 // Method scala/runtime/ModuleSerializationProxy."<init>":(Ljava/lang/Class;)V
+       9: areturn
+
+  public int bar();
+    Code:
+       0: bipush        42
+       2: ireturn
+}
+Compiled from "MethodObject.scala"
+public final class foo.Foo {
+  public static int bar();
+    Code:
+       0: getstatic     #13                 // Field foo/Foo$.MODULE$:Lfoo/Foo$;
+       3: invokevirtual #15                 // Method foo/Foo$.bar:()I
+       6: ireturn
+}
